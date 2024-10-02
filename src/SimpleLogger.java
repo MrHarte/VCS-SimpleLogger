@@ -15,6 +15,6 @@ public class SimpleLogger {
      */
     public void logThis(String pMessage) {
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern(DATE_FORMAT));
-        System.out.printf("[%s] %s%n", timestamp, pMessage);
+        System.out.printf("[%s] [Info] %s%n", timestamp, pMessage);
     }
 }
