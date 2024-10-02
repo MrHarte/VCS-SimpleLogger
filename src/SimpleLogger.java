@@ -8,6 +8,18 @@ public class SimpleLogger {
     /** The date format used for logging timestamps. */
     private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
+    private static SimpleLogger aLogger;
+
+    private SimpleLogger() {
+    }
+
+    public static SimpleLogger getInstance() {
+        if (SimpleLogger.aLogger == null) {
+            SimpleLogger.aLogger = new SimpleLogger();
+        }
+        return SimpleLogger.aLogger;
+    }
+
     /**
      * Logs a message with the current timestamp.
      *
