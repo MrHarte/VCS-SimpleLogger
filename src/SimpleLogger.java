@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 public class SimpleLogger {
     /** The date format used for logging timestamps. */
     private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    private static final String LOG_FILE = "application.log"; // Change the file name/path as needed
 
     /** File name used for logging. */
     private static final String LOG_FILE = "application.log"; // Change the file name/path as needed
